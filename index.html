@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-pb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+        
+        .box{
+            color: red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 15px;
+            width: 20%;
+        }
+
+        fieldset{
+            border: 3px solid #fbf336;
+        }
+        legend{
+            border: 1px solid #e2642e;
+            padding: 10px;
+            text-align: center;
+            background-color: #e2642e;
+            border-radius: 8px;
+        }
+        .inputBox{
+            position: relative;
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid yellow;
+            outline: none;
+            color: yellow;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{
+            top: -20px;
+            font-size: 12px;
+            color: yellow;
+        }
+    form {
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+</style>
+<body>
+
+
+    <div class="box">
+        <form action="https://api.sheetmonkey.io/form/qf7EWbSnJpugs2sFMEz4cQ"method="post">
+
+            <fieldset>
+
+    <form id="ordem de serviço">
+
+        <form>
+            <h2>Meu Formulário</h2>
+            <img src="imagem/jjs.jpg">
+            <!-- Outros campos do formulário podem ser adicionados aqui -->
+        </form>
+
+        <form>
+            <label for="Mecanico">Mecanico:</form>
+                <select id="Mecanico" nome="Mecanico">
+                    <option value="João">João</option>
+                    <option value="Danilo">Danilo</option>
+                    </select>
+                    </form>
+<br><br><br>
+
+    <label for="Cliente">Cliente</label>
+    <input type="text" id="Cliente" nome="Cliente" required>
+    <br><br><br>
+
+    <form>
+        <label for="Equipamento">Equipamento:</form>
+            <select id="Equipamento" nome="Equipamento">
+                <option value="Paleteira">Paleteira</option>
+                <option value="Transpaleteira">Transpaleteira</option>
+                <option value="Empilhadeira Eletrica">Empilhadeira Eletrica</option>
+                <option value="Empilhadeira Combustão">Empilhadeira Combustão</option>
+                </select>
+                </form>
+        <br><br><br>
+
+        <form>
+            <label for="Marca">Marca:</form>
+                <select id="Marca" nome="Marca">
+                    <option value="Toyota">Toyota</option>
+                    <option value="Still">Still</option>
+                    <option value=" Yale">Yale</option>
+                    <option value=" Hyster">Hyster</option>
+                    <option value="  Linde">Linde</option>
+                    <option value="  Clark">Clark</option>
+                    </select>
+                    </form>
+                    <br><br><br>
+
+                    <form>
+                        <label for="Tipo de serviço">Tipo de Serviço:</form>
+                            <select id="Tipo de Serviço" nome="Tipo de Serviço">
+                                <option value="Preventiva">Preventiva</option>
+                                <option value="Revisão">Revisão</option>
+                                <option value="Conserto">Conserto</option>
+                                <option value="Visita">Visita</option>
+                                </select>
+                                </form>
+                                <br><br><br>
+
+
+        <label for="data_Serviço"><b>Data de Serviço:</b></label>
+        <input type="date" name="data_Serviço" id="data_Serviço" required>
+        <br><br><br>
+
+        <form>
+            <label for="Conclusão_Serviço">Conclusão de Serviço:</form>
+                <select id="Conclusão de Serviço" nome="Conclusão de Serviço">
+                    <option value="Realizado">Realizado</option>
+                    <option value="A ser Realizado">A ser Realizado</option>
+                    </select>
+                    </form>
+<br><br><br>
+
+
+                                <input type="submit" name="submit" id="submit">
+                            </fieldset>
+
+
+    </form>
+    
+</body>
+</html>
